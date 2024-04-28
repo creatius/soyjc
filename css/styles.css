@@ -15,16 +15,10 @@ body {
 
 }
 
-p {
-
+.anchor-seccion {
+    margin-bottom:2rem;
+    display:block;
 }
-
-a {
-
-}
-
-
-
   
 nav {
     background: rgba(0,0,0,0.8);
@@ -66,6 +60,7 @@ h1 {
     font-size:2.2rem;
     font-weight:600;
     color:var(--color-primario);
+    line-height:0;
 }
 
 h2 {
@@ -158,7 +153,8 @@ li {
     bottom:0;
 }
 
-section {
+section, header {
+    margin-top:10rem;
     margin-bottom:5rem;
 }
 
@@ -177,15 +173,111 @@ section {
 
 /* Formulario */
 
-input {
-    outline: 0;
-    border-width: 0 0 2px;
-    border-color: blue
-  }
-  input:focus {
-    border-color: green;
-    outline: 1px dotted #000
-  }
+.contenedor-formulario{	
+    width: 500px; 
+    height: auto;
+    border-radius: 1.2rem;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-color: #fff; 
+    padding-left: 30px; 
+}
+
+
+input{
+	background-color: ##fff; 
+	width: 455px; 
+	height: 40px; 
+	border-radius: 1.2rem;  
+	border-style: solid; 
+	border-width: 1px; 
+	border-color: var(--color-primario); 
+	margin-top: 10px;  
+	padding-left: 10px;
+    margin-bottom: 20px; 
+}
+
+input::placeholder {
+    font-size:16px;
+    color:#bbb;
+}
+
+
+textarea{
+    background-color: #fff; 
+    width: 455px; 
+    height: 150px; 
+    border-radius: 1.2rem;  
+    border-style: solid; 
+    border-width: 1px; 
+	border-color: var(--color-primario); 
+    margin-top: 10px;  
+    padding-left: 10px;
+    margin-bottom: 20px; 
+    padding-top: 15px; 
+}
+
+textarea::placeholder {
+    font-size:16px;
+    color:#bbb;
+}
+
+
+label{
+    display: block; 
+    float: center; 
+    color:var(--color-primario);
+}
+
+
+button{
+    height: 45px; 
+    padding-left: 5px;
+    padding-right: 5px; 	
+    margin-bottom: 20px; 
+    margin-top: 10px;
+    font-size:1rem;
+    text-transform: uppercase;
+    background-color: var(--color-primario);
+	border-color: var(--color-primario); 
+    border-style: solid; 
+    border-radius: 1rem;	
+    width: 470px;   
+    cursor: pointer;
+    font-weight:600;
+}
+
+
+button p{
+    color: #fff; 
+}
+
+
+span{
+	color: var(--color-primario); 
+}
+
+
+.obligatorio{
+	color: #000;  
+}
+
+
+.formulario input:focus{
+	outline:0;
+	border: 2px solid #000;
+}
+
+
+.formulario textarea:focus{
+	outline:0;
+	border: 2px solid #000;
+}
+
+
+
+
+
 
 
  /* Media Query */

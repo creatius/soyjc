@@ -18,8 +18,8 @@
 </head>  
 <body>    
 
+    <span id="inicio" class="anchor-seccion"></span>
     <header>
-        <span id="inicio"></span>
         <div id="hola-mundo">¡Hola mundo!</div>
         <h1><span class="soy-jc">Soy Juan Carlos, programador web</span></h1>
         <span id="soy-jc-descripcion">diseñador UX/UI, product manager, experto en Wordpress y consultor en digitalización</span>
@@ -35,7 +35,7 @@
        </ul>
     </nav>  
 
-    <span id="presentacion"></span>
+    <span id="presentacion" class="anchor-seccion"></span>
     <section aria-label="Presentación de Juan Carlos">  
         <h2>Este soy yo</h2>
         <p>Vale... hago muchas cosas, ¿Aprendiz de todo y maestro de nada?</p>
@@ -43,7 +43,7 @@
         <p>A lo largo de los años mi carrera profesional se ha encaminado en devorar conocimiento y aplicarlo en los proyectos tecnológicos en que he participado. El equilibrio entre desarrollo, diseño y negocios me permite tener una visión mas amplia al entender los distintos roles.</p>
     </section>
 
-    <span id="experiencia"></span>
+    <span id="experiencia" class="anchor-seccion"></span>
     <section aria-label="Experiencia laboral">  
         <h2>Mi experiencia laboral</h2>
         <ul>
@@ -114,7 +114,7 @@
     </section>
 
 
-    <span id="portfolio"></span>
+    <span id="portfolio" class="anchor-seccion"></span>
 
 
     <section aria-label="Muestra de trabajos realizados">  
@@ -212,36 +212,69 @@ a
 
     </section>
 
-    <span id="contacto"></span>
+    <span id="contacto" class="anchor-seccion"></span>
 
     <section aria-label="Formulario de contacto">  
         <h2>¿Hablamos?</h2>
         <p>Si deseas contactar conmigo rellena el siguiente formulario y te contestaré en la mayor brevedad posible.</p> 
 
-        <form action="#" method="post">
-        <ul>
-            <li>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-            <label for="mail">Correo electrónico:</label>
-            <input type="email" id="mail" name="user_mail" />
-            </li>
-            <li>
-            <label for="msg">Mensaje:</label>
-            <textarea id="msg" name="user_message"></textarea>
-            </li>
-            <li>
-            <button type="submit">Enviar mensaje</button>
-            </li>
-        </ul>
-        </form>
+
+        <div class="contenedor-formulario">
+
+            <div class="formulario">			
+
+                <form action="envia-formulario.php" method="post">				
+
+                    <p>
+                        <label for="nombre">Nombre
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="nombre" id="nombre" required="obligatorio" placeholder="Tu nombre">
+                    </p>
+                
+                    <p>
+                        <label for="email" class="colocar_email">Email
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="email" name="email" id="email" required="obligatorio" placeholder="Tu Email">
+                    </p>	
+
+                    <p>
+                        <label for="asunto" class="colocar_asunto">Asunto
+                            <span class="obligatorio">*</span>
+                        </label>
+                        <input type="text" name="asunto" id="assunto" required="obligatorio" placeholder="Escribe un asunto">
+                    </p>		
+                
+                    <p>
+                        <label for="mensaje" class="colocar_mensaje">Mensaje
+                            <span class="obligatorio">*</span>
+                        </label>                     
+                        <textarea name="mensaje" class="mensaje" id="mensaje" required="obligatorio" placeholder="Escribe aquí tu comentario..."></textarea> 
+                    </p>	  								
+                
+                    <button type="submit" name="enviar" id="enviar"><p>Enviar</p></button>
+
+                    <p class="obligatorio">
+                        <span> * </span>los campos son obligatorios.
+                    </p>					
+                    
+                </form>
+            </div>
+            
+        </div>
+
+
+
+
+
     </section>
 
     <footer>
-        <h4>Redes sociales</h4>
+        <h3>También en</h3>
         <a href="https://www.linkedin.com/in/jcortegacabrera/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/creatius" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+        <a href="mailto:hola@soyjc.com" target="_blank"><i class="fa fa-envelope-square" aria-hidden="true"></i></a>
     </footer>
 
 </body>  
