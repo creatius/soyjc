@@ -21,7 +21,7 @@
     <header>
         <div id="hola-mundo">¡Hola mundo!</div>
         <h1><span class="soy-jc">Soy Juan Carlos, programador web</span></h1>
-        <span class="soy-jc-descripcion">diseñador UX/UI, product manager, experto en Wordpress y consultor en digitalización</span>
+        <span id="soy-jc-descripcion">diseñador UX/UI, product manager, experto en Wordpress y consultor en digitalización</span>
     </header>    
 
     <nav>
@@ -37,7 +37,7 @@
         <h2>Este soy yo</h2>
         <p>Vale... hago muchas cosas, ¿Aprendiz de todo y maestro de nada?</p>
         <p>Desde pequeño me llama la curiosidad, todo lo relacionado con la tecnología, cada cosa que veía me preguntaba <strong>¿cómo lo hace?</strong> <strong>¿cómo funciona?</strong> así no me duraba ni un mes los juguetes de Reyes, en cuando me cansaba de jugar encontraba la forma de abrir cualquier objeto que tenía luces, emitía algún sonido o se desplazaba con un motor.</p>
-        <p>A lo largo de los años mi carrera profesional se ha encaminado en devorar conocimiento y aplicarlo en los proyectos tecnológicos en que he participado. El equilibrio entre desarrollo, diseño y negocios me permite de</p>
+        <p>A lo largo de los años mi carrera profesional se ha encaminado en devorar conocimiento y aplicarlo en los proyectos tecnológicos en que he participado. El equilibrio entre desarrollo, diseño y negocios me permite tener una visión mas amplia al entender los distintos roles.</p>
     </section>
 
     <section aria-label="Experiencia laboral">  
@@ -120,55 +120,36 @@
         <div class="centered cards">
 
             <article class="card">
-                <p>content for card one</p>
-                <a href="">
+ 
+                <a href="https://astican.es/" target="_blank">
 
                     <div class="card-img">
 
-                        <img width="623" height="584" src="images/portafolio/astican.jpg">
+                        <img width="623" height="584" src="images/portafolio/astican.jpg" alt="Captura de la web de ASTICAN">
 
                         
                     </div>
 
                     <div class="card-texto">
-
+                        <h3>ASTICAN</h3>
                     </div>
                     
 
                 </a>
             </article>
             <article class="card">
-                <p>content for card one</p>
-                <a href="">
+
+                <a href="https://www.inerza.com" target="_blank">
 
                     <div class="card-img">
 
-                        <img width="623" height="584" src="images/portafolio/inerza.jpg">
+                        <img width="623" height="584" src="images/portafolio/inerza.jpg" alt="Captura de la web de INERZA">
 
                         
                     </div>
 
                     <div class="card-texto">
-
-                    </div>
-                    
-
-                </a>
-            </article>
-
-            <article class="card">
-                <p>content for card one</p>
-                <a href="">
-
-                    <div class="card-img">
-
-                        <img width="623" height="584" src="images/portafolio/ccaracena.jpg">
-
-                        
-                    </div>
-
-                    <div class="card-texto">
-
+                        <h3>INERZA</h3>
                     </div>
                     
 
@@ -176,23 +157,49 @@
             </article>
 
             <article class="card">
-                <p>content for card one</p>
-                <a href="">
+
+
+
+                <a href="https://www.ccaracena.es/" target="_blank">
 
                     <div class="card-img">
-
-                        <img width="623" height="584" src="images/portafolio/odsempresascanarias.jpg">
+a
+                        <img width="623" height="584" src="images/portafolio/ccaracena.jpg" alt="Captura de la web de CCARACENA">
 
                         
                     </div>
 
                     <div class="card-texto">
+                        <h3>CCARACENA</h3>
+                    </div>
+                    
 
+                </a>
+
+
+            </article>
+
+            <article class="card">
+
+                <a href="https://www.odsempresascanarias.org/" target="_blank">
+
+                    <div class="card-img">
+
+                        <img width="623" height="584" src="images/portafolio/odsempresascanarias.jpg" alt="Captura de la web de ODS EMPRESAS CANARIAS">
+
+                        
+                    </div>
+
+                    <div class="card-texto">
+                        <h3>ODS EMPRESAS CANARIAS</h3>
                     </div>
                     
 
                 </a>
             </article>
+
+
+
 
     </div>
 
@@ -205,12 +212,30 @@
         <h2>¿Hablamos?</h2>
         <p>Si deseas contactar conmigo rellena el siguiente formulario y te contestaré en la mayor brevedad posible.</p> 
 
-    
+        <form action="#" method="post">
+        <ul>
+            <li>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+            <label for="msg">Mensaje:</label>
+            <textarea id="msg" name="user_message"></textarea>
+            </li>
+            <li>
+            <button type="submit">Enviar mensaje</button>
+            </li>
+        </ul>
+        </form>
     </section>
 
     <footer>
         <h4>Redes sociales</h4>
-        <a href="https://www.linkedin.com/in/jcortegacabrera/">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jcortegacabrera/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
     </footer>
 
 </body>  

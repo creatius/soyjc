@@ -1,3 +1,9 @@
+:root { 
+	--color-primario: #00AB6B;
+    --color-blanco: #fff;
+} 
+
+
 body {
 
     padding:3.5rem;
@@ -13,11 +19,14 @@ p {
 
 }
 
-header {
+a {
 
-  }
+}
+
+
+
   
-  nav {
+nav {
     background: rgba(0,0,0,0.8);
     width: 100%;
     position: fixed;
@@ -26,46 +35,66 @@ header {
     top:0;
     right:0;
     margin-right: 2.5rem;
-  }
+}
   
-  nav ul {
+nav ul {
     list-style: none;
     overflow: hidden; 
     float:right;
-  }
+}
   
-  nav ul li {
+nav ul li {
     float: left;
     font-size: 18px;
     font-weight: 600;
-  }
+}
 
-  nav ul li a {
+nav ul li a {
     display: block;
     padding: 10px;
-    color: #fff;
+    color:var(--color-blanco);
     text-decoration: none;
-  }
-  
-  nav ul li:hover {
-    border-bottom:solid 8px;
-    border-color:#f00;
-  }
+}
+
+nav ul li:hover, nav ul li:hover a {
+    border-bottom:solid 2px;
+    border-color:var(--color-primario);
+    color:var(--color-primario);
+}
 
 h1 {
     font-size:2.2rem;
     font-weight:600;
+    color:var(--color-primario);
 }
 
 h2 {
     font-size:1.8rem;
     font-weight:800;
+    color:var(--color-primario);
+
 }
 
 #hola-mundo {
     font-size:3rem;
     font-weight: 800;;
 }
+
+#soy-jc-descripcion {
+    font-size:2.2rem;
+}
+
+.anio {
+    font: size 1.2rem;
+    font-weight:800;
+    color:var(--color-primario);
+}
+
+li {
+    list-style:none;
+}
+
+/* Tarjetas - Cards */
 
 .cards {
     display: flex;
@@ -116,9 +145,42 @@ h2 {
     flex: 1 1 auto;
 }
 
+.card-texto {
+    position:absolute;
+    padding:1rem;
+    font-size:1.5rem;
+    color:var(--color-blanco);
+    bottom:0;
+}
+
 section {
     margin-bottom:5rem;
 }
+
+.card:hover {
+    
+}
+
+/* FontAwesome */
+
+.fa {
+    font-size:42px;
+    color:var(--color-primario);
+
+}
+
+
+/* Formulario */
+
+input {
+    outline: 0;
+    border-width: 0 0 2px;
+    border-color: blue
+  }
+  input:focus {
+    border-color: green;
+    outline: 1px dotted #000
+  }
 
 
  /* Media Query */
