@@ -3,15 +3,27 @@
     --color-blanco: #fff;
 } 
 
-
 body {
-
     padding:3.5rem;
-
     background-color: #000;
     color:#fff;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+}
+
+/* Genéricos */
+
+h1 {
+    font-size:2.2rem;
+    font-weight:600;
+    color:var(--color-primario);
+    line-height:0;
+}
+
+h2 {
+    font-size:1.8rem;
+    font-weight:800;
+    color:var(--color-primario);
 
 }
 
@@ -19,6 +31,8 @@ body {
     margin-bottom:2rem;
     display:block;
 }
+
+/* Menú de navegación */
   
 nav {
     background: rgba(0,0,0,0.8);
@@ -56,19 +70,7 @@ nav ul li:hover, nav ul li:hover a {
     color:var(--color-primario);
 }
 
-h1 {
-    font-size:2.2rem;
-    font-weight:600;
-    color:var(--color-primario);
-    line-height:0;
-}
 
-h2 {
-    font-size:1.8rem;
-    font-weight:800;
-    color:var(--color-primario);
-
-}
 
 #hola-mundo {
     font-size:3rem;
@@ -114,11 +116,9 @@ li {
     box-shadow: unset;
     background: unset;
     box-sizing: unset;
-
     flex: 1 1 auto;
     box-sizing: border-box;
     margin: 1rem 1rem;
-
     height:300px;
  }
 
@@ -158,10 +158,6 @@ section, header {
     margin-bottom:5rem;
 }
 
-.card:hover {
-
-}
-
 /* FontAwesome */
 
 .fa {
@@ -169,7 +165,6 @@ section, header {
     color:var(--color-primario);
 
 }
-
 
 /* Formulario */
 
@@ -182,7 +177,6 @@ section, header {
     background-color: #fff; 
     padding-left: 30px; 
 }
-
 
 input{
 	background-color: ##fff; 
@@ -201,7 +195,6 @@ input::placeholder {
     font-size:16px;
     color:#bbb;
 }
-
 
 textarea{
     background-color: #fff; 
@@ -247,38 +240,27 @@ button{
     font-weight:600;
 }
 
-
 button p{
     color: #fff; 
 }
-
 
 span{
 	color: var(--color-primario); 
 }
 
-
 .obligatorio{
 	color: #000;  
 }
-
 
 .formulario input:focus{
 	outline:0;
 	border: 2px solid #000;
 }
 
-
 .formulario textarea:focus{
 	outline:0;
 	border: 2px solid #000;
 }
-
-
-
-
-
-
 
  /* Media Query */
 
