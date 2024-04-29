@@ -264,7 +264,7 @@ span{
 
  /* Media Query */
 
- @media screen and (max-width: 960px) {
+@media screen and (max-width: 900px) {
     .cards {
         flex: 1 1 100%;
         flex-direction: column;
